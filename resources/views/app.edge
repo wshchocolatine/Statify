@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App</title>
+    <link rel="icon" href="logo_statify.png" />
+    <link href="css/app.css" rel="stylesheet"/>
+</head>
+<body>
+    @if(error)
+       <h1> Error, go back to <a href="/">Login Page</a> </h1>
+    @else
+       <div id="root" data-token={{token}}></div>
+       <script src="{{asset('assets/app.js')}}"></script>
+    @end
+</body>
+</html>

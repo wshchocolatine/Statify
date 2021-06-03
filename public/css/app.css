@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    background-color: #191414;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --green: #1DB954;
+}
+
+* {
+    box-sizing: border-box;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+header {
+    width: 100%;
+    height: 10vh;
+    margin-top: 40px;
+}
+
+.invisible {
+    display: none !important;
+}
+
+.headerUl {
+    display: flex;
+    color: white;
+    margin: 0;
+    margin-left: 90px;
+}
+
+   .headerLi {
+       margin-left: 50px;
+       font-size: 1.4688rem;
+       font-weight: 400;
+       transition: all 150ms ease;
+   }
+
+     .headerLiActive { 
+         border-width: 10%;
+         border-bottom: 2px solid var(--green);
+     }
+
+     .headerLi:hover:not(.headerLiActive) {
+         cursor: pointer;
+         border-bottom: 2px solid var(--green);
+     }
+
+
+.fatContainerTracks {
+    width: 100%;
+}
+
+   .containerHeading {
+       display: flex;
+       width: 100%;
+       color: #fff;
+   }
+
+      .tracks {
+          font-size: 2.75rem;
+          font-weight: bolder;
+          margin: 0;
+          margin-left: 40px;
+      }
+
+      .optionsForTracksUl {
+          display: flex;
+          margin-top: 20px;
+          font-size: 1.1875rem;
+      }
+
+         .optionsForTracks {
+             margin-left: 20px;
+             transition: color 400ms ease;
+         }
+
+           .optionsForTracksActive {
+               color: var(--green);
+           }
+
+           .optionsForTracks:not(.optionsForTracksActive):hover {
+               color: var(--green);
+               cursor: pointer;
+           }
+
+
+    .separationTracks {
+        border: 1px solid var(--green);
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+
+    .favTracks {
+        margin: 0;
+        margin-left: 35px;
+        padding: 10px 0px 0px 0px;
+
+        width: 100%;
+    }
+
+       .track {
+           display: flex;
+           align-items: center;
+           margin-top: 7px;
+           max-height: 100px;
+           padding: 10px 0px;
+       }
+
+         .trackImage {
+             width: 80px;
+             height: 80px;
+             background: white;
+         }
+
+            .nameOfTrack {
+                color: white;
+                margin: 0;
+                margin-left: 40px;
+                font-weight: 400;
+                font-size: 1.0313rem;
+            }
+
+            .nameOfArtistTrack {
+                color: #C5C5C5;
+                margin: 0;
+                margin-top: 5px;
+                margin-left: 40px;
+                font-weight: 400;
+                font-size: 1.0313rem;
+            }
+
+.fatContainerProfile {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+   .imgProfile {
+       width: 200px;
+       height: 200px;
+       border-radius: 80%;
+       background-color: white;
+   }
+
+   .nameProfile {
+       color: #fff;
+       font-size: 1.375rem;
+       margin-top: 40px;
+   }
+
+   .followersProfile {
+       color: #C5C5C5;
+       font-size: 1.25rem;
+       margin: 0;
+   }
+
+
+
+.fatContainerArtists {
+    width: 100%;
+}
+
+   .containerHeadingArtists {
+       display: flex;
+       width: 100%;
+       color: #fff;
+   }
+
+      .artists {
+          font-size: 2.75rem;
+          font-weight: bolder;
+          margin: 0;
+          margin-left: 40px;
+      }
+
+      .optionsForArtistsUl {
+          display: flex;
+          margin-top: 20px;
+          font-size: 1.1875rem;
+      }
+
+         .optionsForArtists {
+             margin-left: 20px;
+             transition: color 400ms ease;
+         }
+
+           .optionsForArtistsActive {
+               color: var(--green);
+           }
+
+           .optionsForArtists:not(.optionsForArtistsActive):hover {
+               color: var(--green);
+               cursor: pointer;
+           }
+
+
+    .separationArtists {
+        border: 1px solid var(--green);
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+
+    .favArtists {
+        margin: 0;
+        margin-left: 35px;
+        padding: 10px 0px 0px 0px;
+
+        width: 100%;
+    }
+
+       .artist {
+           display: flex;
+           align-items: center;
+           margin-top: 7px;
+           max-height: 100px;
+           padding: 10px 0px;
+       }
+
+         .artistImage {
+             width: 80px;
+             height: 80px;
+             background: white;
+         }
+
+            .nameOfArtist {
+                color: white;
+                margin: 0;
+                margin-left: 40px;
+                font-weight: 400;
+                font-size: 1.0313rem;
+            }
+
+
+
+@media (max-width: 550px) {
+    html, body{
+        font-size: 13px;
+    }
+
+    .headerUl {
+        margin-left: 0px;
+        padding: 0px;
+    }
+
+    .optionsForTracksUl {
+        padding: 0px;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    html, body {
+        font-size: 10px;
+    }
+
+    .optionsForTracksUl {
+        margin-top: 5px;
+    }
+
+    .historic {
+        display: none;
+    }
+
+/*     .tracks {
+        margin-left: 10px;
+    }
+
+    .favTracks {
+        margin-left: 10px;
+    }
+
+    .headerLi:first-child {
+        margin-left: 10px;
+    } */
+}
+
+@media screen {
+    body {
+        overflow-x: hidden;
+    }
+}
